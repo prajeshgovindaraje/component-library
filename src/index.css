@@ -1,0 +1,104 @@
+
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ************************BADGE***************************** */
+
+.badge-section .pill{
+
+  border-radius: 50px;
+
+}
+
+.badge-section .square{
+  border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+.badge{
+  font-family: "Inter";
+  padding: 8px 20px;
+}
+
+.badge-section{
+  border: 1px solid blue;
+
+  width: 100%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.badge-section > h1{
+  font-size: 3rem;
+  font-family: "Permanent Marker";
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+.badge-section  .badge-row h1{
+  font-family: "Permanent Marker";
+  margin-right: 1em;
+  width: 150px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.badge-row{
+
+  
+  align-items:center;
+  gap: 1em;
+  display: flex;
+  /* border: 1px solid red; */
+
+}
+
+
+.badge-section .gray{
+  color:#1F2937 ;
+  background-color:#F3F4F6;
+}
+.badge-section .red{
+  color:#991B1B ;
+  background-color:#FEE2E2 ;
+}
+
+.badge-section .yellow{
+  color:#92400E ;
+  background-color:#FEF3C7 ;
+}
+.badge-section .green{
+      color: #065F46;
+      background-color:#D1FAE5 ;
+}
+.badge-section .blue{
+  color:#1E40AF ;
+  background-color: #DBEAFE;
+}
+.badge-section .indigo{
+      color:#3730A3 ;
+      background-color: #E0E7FF;
+}
+.badge-section .purple{
+  color:#5B21B6 ;
+  background-color:#EDE9FE ;
+}
+.badge-section .pink{
+  color:#9D174D ;
+  background-color:#FCE7F3 ;
+}
