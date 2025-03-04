@@ -1,42 +1,43 @@
 
-import Badge from './components/Badge'
+import BadgePage from './pages/BadgePage'
+import CardPage from './pages/CardPage'
+import BannerPage from './pages/BannerPage'
+import TestimonialPage from './pages/TestimonialPage'
+
+
+import Banner from './components/Banner'
+import Header from './components/Header'
+
+
+import { BrowserRouter,Route,Routes } from 'react-router'
+
 
 export default function App(){
   return(
+    <>
 
+    <BrowserRouter>
 
-    <section className="badge-section">
-        <h1>BADGES</h1>
+    <Routes>
+ 
 
-        <div className="badge-row">
+    <Route path="/" element={<Header/>}>
+      <Route index element={<BadgePage/>} />
+      <Route path="banner" element={<BannerPage/>}/>
+      <Route path="card" element={<CardPage/>}/>
+      <Route path="testimonial" element={<TestimonialPage/>}/>
+    </Route>
+    
 
-          <h1>SQUARE</h1>
-          <Badge color="gray" shape="square">Badge</Badge>
-          <Badge color="red" shape="square">Badge</Badge>
-          <Badge color="yellow" shape="square">Badge</Badge>
-          <Badge color="green" shape="square">Badge</Badge>
-          <Badge color="blue" shape="square">Badge</Badge>
-          <Badge color="purple" shape="square">Badge</Badge>
-          <Badge color="indigo" shape="square">Badge</Badge>
-          <Badge color="pink" shape="square">Badge</Badge>
-          
+    
+    </Routes>
+    
+    
+    </BrowserRouter>
 
-        </div>
-        <div className="badge-row">
+      
 
-          <h1>PILL</h1>
-          <Badge color="gray" shape="pill">Badge</Badge>
-          <Badge color="red" shape="pill">Badge</Badge>
-          <Badge color="yellow" shape="pill">Badge</Badge>
-          <Badge color="green" shape="pill">Badge</Badge>
-          <Badge color="blue" shape="pill">Badge</Badge>
-          <Badge color="purple" shape="pill">Badge</Badge>
-          <Badge color="indigo" shape="pill">Badge</Badge>
-          <Badge color="pink" shape="pill">Badge</Badge>
-
-        </div>
-    </section>
-
+    </>
 
   )
 }

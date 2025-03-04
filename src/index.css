@@ -5,6 +5,17 @@
 body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  background-color: #F9FAFB;
+}
+
+/***************************************** Header **************************************/
+.myNavBar{
+  border: 1px solid green;
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 
@@ -33,7 +44,7 @@ body{
 }
 
 .badge-section{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 
   width: 100%;
   align-items: center;
@@ -44,10 +55,12 @@ body{
   gap: 1em;
 }
 .badge-section > h1{
-  font-size: 3rem;
   font-family: "Permanent Marker";
-  margin: 0;
-  margin-top: 0.5em;
+
+  font-size: 3rem;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  
 }
 
 .badge-section  .badge-row h1{
@@ -68,37 +81,211 @@ body{
 
 }
 
-
-.badge-section .gray{
+/* **************************    COLOURS * ************************/
+.gray{
   color:#1F2937 ;
   background-color:#F3F4F6;
 }
-.badge-section .red{
+.red{
   color:#991B1B ;
   background-color:#FEE2E2 ;
 }
 
-.badge-section .yellow{
+.yellow{
   color:#92400E ;
   background-color:#FEF3C7 ;
 }
-.badge-section .green{
+.green{
       color: #065F46;
       background-color:#D1FAE5 ;
 }
-.badge-section .blue{
+.blue{
   color:#1E40AF ;
   background-color: #DBEAFE;
 }
-.badge-section .indigo{
+.indigo{
       color:#3730A3 ;
       background-color: #E0E7FF;
 }
-.badge-section .purple{
+.purple{
   color:#5B21B6 ;
   background-color:#EDE9FE ;
 }
-.badge-section .pink{
+.pink{
   color:#9D174D ;
   background-color:#FCE7F3 ;
+}
+
+
+
+/*************************** BANNER *********************************/
+
+.banner-section{
+  border:1px solid blue;
+  font-family: "Permanent Marker";
+  text-align: center;
+ 
+
+}
+.banner-section > h1{
+  font-size: 3rem;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.banner-div{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 50em;
+  border-radius: 6px;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-right: 16px;
+}
+
+.banner-content-div{
+  /* border: 1px solid blue; */
+  flex-direction: column;
+  display: flex;
+  gap: 0.7em;
+  padding: 0.8em;
+  text-align: start;
+}
+.banner-content-div > *{
+  font-family: Inter;
+  margin: 0;
+}
+
+.banner-title{
+  
+  font-weight: 500;
+}
+.banner-content{
+  font-weight: 300;
+}
+
+.banner-icon-div{
+  padding-top: 0.8em;
+  padding-left: 1em;
+  /* border: 1px solid yellow; */
+}
+.banner-icon-div > *{
+  margin: 0;
+  
+}
+
+.banner-icon-div > img{
+  margin-top: 0.1em;
+}
+
+.banner-with-type{
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  margin-top: 16px;
+  align-items: center;
+  /* justify-content:center; */
+  padding-left: 150px;
+  padding-right: 150px;
+
+}
+.banner-pair-div > h1{
+  /* border: 1px solid cyan; */
+  width: fit-content;
+  margin-left: 6.5em;
+}
+.banner-pair-div{
+  border-bottom: 1px solid gray;
+  padding-bottom: 3em;
+  margin: 16px;
+  margin-bottom: 3em;
+}
+
+  
+
+
+
+
+/* ******************     CARD     *****************************/
+
+
+.cards-section{
+  /* border:1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Permanent Marker';
+
+}
+
+.cards-section > h1{
+  font-size: 3rem;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.cards-container{
+  /* border: 2px solid purple; */
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  position: relative;
+  margin-top: 3em;
+}
+.hover-text{
+  position: absolute;
+  transform: rotate(20deg);
+  right: -50px;
+  top: -51px;
+}
+
+.card-div-hover:hover{
+  box-shadow: 0 4px 25px  rgb(0,0,0,0.1);
+
+}
+
+.card-div{
+  background-color: #C6E7FF;
+  font-family: Inter;
+  font-size: 18px;
+  width: 380px;
+  height: 200px;
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  padding: 10px;
+  
+
+  /* margin: 400px; */
+
+}
+
+.card-div p:nth-of-type(1){
+  color: #111827;
+  font-weight: 500;
+
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.card-div p:nth-of-type(2){
+  color: #6B7280;
+  line-height: 1.5;
+  width: 300px;
+  /* border: 1px solid red; */
+}
+
+.upload-icon-div{
+  background-color: #10375C;
+  width: fit-content;
+  padding: 12px;
+  position: absolute;
+  top: -30px;
+  left: 45%;
+  border-radius: 6px;
 }
