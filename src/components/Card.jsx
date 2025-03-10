@@ -17,7 +17,7 @@ export default function Card({canHover=false}){
         <>
 
 
-           <div className={`card-div ${hoverClass}`}>
+           <div className={`${hoverClass} ${"card-div"} `}>
 
 
             <div className='upload-icon-div'>

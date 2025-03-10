@@ -1,5 +1,6 @@
 
 import './index.css'
+import './testimonial.css'
 import App from "./App"
 import {createRoot} from "react-dom/client"
 
